@@ -28,7 +28,7 @@ var titleDict = {};
 var deadList = {"or": true, "of": true, "the": true};
 
 
-// Hash all of the words in the titles for 
+// Hash all of the words in the titles
 for (var title_index in titleList) {
     var words = titleList[title_index].split(" ");
     for (var word_index in words) {
@@ -42,8 +42,8 @@ for (var title_index in titleList) {
 
 
 // Generate a new title
-function getTitle() {
-    var length = 3 + 2 * Math.random();
+function getTitle(min, max) {
+    var length = Math.floor(min + (max - min + 1) * Math.random());
     var title = "";
     var curOf = false;
     var officer = false;
@@ -73,6 +73,5 @@ function getTitle() {
     return toTitleCase(title.trim());
 }
 
-// for(var j=0; j < 100; j++) {
-console.log(getTitle());    
-// }
+// Uncomment this to see an example
+// console.log(getTitle(3, 5));
