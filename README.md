@@ -1,7 +1,15 @@
 title-generator.js
 ==================
 
-A Corporate Title Generator
+A tool to generate fake corporate titles.
+
+### Examples
+
+* Privacy Superintendent Of Resources Middle Chairman
+* Brand Compliance Science Officer
+* Visionary Technology Audit Officer
+
+
 
 Usage
 ----
