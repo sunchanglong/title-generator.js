@@ -11,3 +11,5 @@ Usage
 Uncomment the last line of the file
 
 ``` node title_generator.js ```
+
+bask in the glory of your new title.
